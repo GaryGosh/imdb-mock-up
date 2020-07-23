@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMDb</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" href="imdb.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav id="imdb-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="https://www.imdb.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1200px-IMDB_Logo_2016.svg.png" alt="IMDB logo" width="71" height="34"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trailers">Trailers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recommended">Recommended</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#streaming">Streaming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#born-today">Born Today</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#movies">Movies/Shows</a>
+            </li>
+            <li class="nav-item">
+              <div class="navbar-text d-lg-none">
+                <img src="avatar.jpg" alt="user image">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-text float-right d-none d-lg-block">
+          <img src="avatar.jpg" alt="user image">
+        </div>
+      </nav>
+      <div id="imdb-nav" data-spy="scroll" data-target="#imdb-navbar" data-offset="0">
+        <div class="container">
+          <br>
+          <h4 id="trailers">Trailer</h4>
+          <div class="row trailer-wrapper no-gutters">
+            <div class="col-sm-4 trailer-img-wrapper"><img class="trailer-img img-fluid" src="https://vignette.wikia.nocookie.net/13reasonswhy/images/5/5c/13_Reasons_Why_poster.jpg/revision/latest?cb=20170411205014" alt="13 reasons why"></div>
+            <div class="col-sm-8">
+              <div class="video-wrapper">
+                <iframe class="embed-responsive embed-responsive-21by9" src="https://www.youtube.com/embed/HC765gMqmew"></iframe>
+                <div class="trailer-info">ONLY ON NETFLIX</div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="container">
+          <h4 id="recommended">Recommended</h4>
+          <div class="row">
+            <div class="col-5"><h5>PARASITE</h5><br>
+              <p>Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</p>
+              <p>Director: Bong Joon Ho</p>
+              <p>Writers: Bong Joon Ho (story), Bong Joon Ho (screenplay)</p>
+              <p>Stars: Kang-ho Song, Sun-kyun Lee, Yeo-jeong Jo</p>
+            </div>
+            <div class="col-7">
+              <img src="https://lh3.googleusercontent.com/proxy/j80uRG5CjQOhBFgKUXb-r8kKgH2Al9VLC3RhTQmlHQzmLJjJATvkaG_8ENp8K9d90MlTUvg48gUMV93e49HzN2idRx9-lf9Y7BEAdE-xJgqG36L9cM8LIY7Q2btre5ysACEzjpHfdcObRcPl1ciHvmFRRw3JiS9Ju_eOnwxV4kRgKEEFU--gnub3MFBO9tfXK0UGcv0EMTJ1yVUf30vo3L6nTlwqC9bjV2hAtcTfo25pMATrboFtfv7F" alt="Parasite" class="side-img">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h4 id="streaming">Streaming</h4>
+          <div class="row">
+            <div class="col-5"><h5>JOKER</h5><br>
+            <p>In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.</p>
+            <p>Director: Todd Phillips</p>
+            <p>Writers: Todd Phillips, Scott Silver </p>
+            <p>Stars: Joaquin Phoenix, Robert De Niro, Zazie Beetz</p>
+            </div>
+            <div class="col-7"><img class="side-img2" src="https://img.discogs.com/gTusMWKsYJcwi6XONYm4zoS0agg=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14256279-1579029539-4946.jpeg.jpg" alt="Joker">
+            <img src="https://i1.wp.com/thefutureoftheforce.com/wp-content/uploads/2019/09/Joker-Official-Images-Fandango-Poster-01.jpg?resize=474%2C593&ssl=1" alt="" class="side-img2">
+            </div>  
+          </div>
+        </div>
+        <div class="container">
+          <h4 id="born-today">Born Today</h4>
+          <br>
+          <div class="row">
+            <div class="celebs"><img src="https://cdn.pinkvilla.com/files/styles/contentpreview/public/johnnydepp_2_0.jpg?itok=f0Otz5dq" alt="Johnny depp">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/natalie-portman-attends-the-92nd-annual-academy-awards-at-news-photo-1581294708.jpg?crop=1.00xw:0.667xh;0,0.0499xh&resize=640:*" alt="Natalie">
+            <img src="data:image/jpeg;base64,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" alt="Tanya Burr">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="name-wrapper"><div class="celeb-name"><p>Johnny Depp</p><p>Natalie Portman</p><p>Tanya Burr</p></div></div>
+        <div class="container">
+          <h4 id="news">News</h4>
+          <div class="row">
+            <div class="col-4"><h5>What Makes Anna Kendrick's "Love Life" So Relatable</h5>
+            <p>Anna Kendrick—star of the new HBO Max series, "Love Life"—knew she had to embrace all the cringeworthy honesty of her character's romantic struggles.</p></div>
+            <div class="col-8"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdH-2vwIbCo1qTanLuwL0L4_nSaKmvLgjw-7W6zQquNLOMFkVr&usqp=CAU" alt="" class="anna">
+            <iframe class="anna-vid" src="https://www.youtube.com/embed/uZp_g271jpo" frameborder="0"></iframe></div>
+          </div>
+        </div>
+        <div class="container">
+          <h4 id="movies">Movies/Shows</h4>
+          <div class="row">
+            <div class="movies-poster"><img src="https://i.pinimg.com/originals/38/9f/67/389f678ff14b87231d4b7394dec36016.jpg" alt="Fargo">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71kfGrriONL._SY550_.jpg" alt="Orphan Black">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91UtgmqEWsL._SY445_.jpg" alt="Wild Tales">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="movies-wrapper"><div class="movies-name"><p>Fargo</p><p>Orphan black</p><p>WIld tales</p></div></div>
+        </div>
+      </div>
+    </body>
+</html>

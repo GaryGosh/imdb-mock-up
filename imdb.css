@@ -1,0 +1,112 @@
+*{
+    font-family: "Roboto", "Helvetica", "sans-serif";
+}
+body {
+    background: #000000 !important;
+    color: white;
+}
+#imdb-nav {
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.navbar-text img {
+    max-width: 35px;
+    height: 30px;
+    border-radius: #efefef;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+.navbar-text img:hover {
+    background: orange;
+    transform: scale(1.3);
+    transform-origin: center;
+    border-color: wheat;
+    transition: transform 0.5s ease-out;
+}
+.embed-responsive {
+    height: 100%;
+    position: relative;
+
+}
+.trailer-wrapper {
+    height: 70%;
+}
+.video-wrapper {
+    position: relative;
+    height: 100%;
+}
+.trailer-info {
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h4 {
+    color: #f5c518;
+}
+h5 {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.side-img {
+    float: right;
+}
+.celebs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+}
+.celebs img{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;  
+}
+.name-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.celeb-name {
+    width: 100%;
+    color: tomato;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.side-img2 {
+    height: 45vh;
+    width: 45vh;
+}
+.anna-vid {
+    float: right;
+    height: 100%;
+}
+
+.movies-poster {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.movies-poster img{
+    height: 40vh;
+    width: 30vh;
+    
+}
+
+.movies-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.movies-name {
+    width: 100%;
+    color: tomato;
+    font-size: 20px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
